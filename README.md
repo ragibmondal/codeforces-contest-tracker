@@ -1,7 +1,3 @@
-Collecting workspace information
-
-Sure, here is a README for your project:
-
 ```md
 # Codeforces Contest Tracker
 
