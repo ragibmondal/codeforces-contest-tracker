@@ -81,10 +81,6 @@ src/
 ├── utils/            # Utility functions and helpers
 ├── App.tsx          # Main application component
 └── main.tsx         # Application entry point
-
-public/
-├── assets/          # Static assets
-└── index.html       # HTML template
 ```
 
 ## 🤝 Contributing
