@@ -1,118 +1,108 @@
-```md
 # Codeforces Contest Tracker
 
-This project is a web application that tracks Codeforces contests and displays standings for each contest. It is built using React, TypeScript, and Tailwind CSS.
+A modern, feature-rich web application for tracking Codeforces programming contests. Built with React, TypeScript, and Tailwind CSS, providing real-time contest information and participant standings.
 
-## Features
+## ⚡ Key Features
 
-- List of all Codeforces contests
-- Filter contests by status (all, upcoming, ongoing, past)
-- Search contests by name
-- View standings for each contest
-- Search participants in the standings
-- Dark mode toggle
+* **Contest Management**
+  * Real-time list of all Codeforces contests
+  * Advanced filtering system (upcoming, ongoing, past)
+  * Smart search functionality for contest names
 
-## Getting Started
+* **Standings Visualization**
+  * Detailed contest standings
+  * Participant search capabilities
+  * Performance metrics tracking
 
-### Prerequisites
+* **User Experience**
+  * Responsive design for all devices
+  * Dark/Light theme toggle
+  * Intuitive navigation
 
-- Node.js (v14 or higher)
-- npm or yarn
+## 🚀 Getting Started
 
-### Installation
+### System Requirements
 
-1. Clone the repository:
-
-   ```sh
-   git clone https://github.com/your-username/codeforces-contest-tracker.git
-   cd codeforces-contest-tracker
-   ```
-
-2. Install dependencies:
-
-   ```sh
-   npm install
-   # or
-   yarn install
-   ```
-
-3. Edit `codeforces-contest-tracker\src\utils\api.ts` the file and add your Codeforces API key and secret:
-
-   ```const API_KEY = 'your codeforces api key';
-const API_SECRET = 'your codeforces api secret key';
-const BASE_URL = 'https://codeforces.com/api';
-   ```
-
-### Running the Application
-
-To start the development server, run:
-
-```sh
-npm run dev
-# or
-yarn dev
+```
+Node.js >= v14.0.0
+npm >= v6.0.0 or yarn >= v1.22.0
 ```
 
-Open your browser and navigate to `http://localhost:3000`.
+### Installation Steps
 
-### Building for Production
-
-To build the application for production, run:
-
-```sh
-npm run build
-# or
-yarn build
+1. Clone the repository
+```bash
+git clone https://github.com/ragibmondal/codeforces-contest-tracker.git
+cd codeforces-contest-tracker
 ```
 
-The production-ready files will be in the `dist` directory.
-
-### Linting
-
-To lint the code, run:
-
-```sh
-npm run lint
-# or
-yarn lint
+2. Install dependencies
+```bash
+npm install # or yarn install
 ```
 
-## Project Structure
+3. Configure API credentials
+```typescript
+// src/utils/api.ts
 
-- 
-
-src
-
-: Contains the source code
-  - `components/`: React components
-  - `hooks/`: Custom hooks
-  - `types/`: TypeScript types
-  - `utils/`: Utility functions
-  - 
-
-App.tsx
-
-: Main application component
-  - 
-
-main.tsx
-
-: Entry point of the application
-- `public/`: Public assets
-- 
-
-index.html
-
-: HTML template
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License.
+export const API_CONFIG = {
+    KEY: 'your_codeforces_api_key',
+    SECRET: 'your_codeforces_api_secret',
+    BASE_URL: 'https://codeforces.com/api'
+};
 ```
 
-Feel free to customize it further based on your specific needs.
-Feel free to customize it further based on your specific needs.
+## 💻 Development
+
+### Launch Development Server
+```bash
+npm run dev # or yarn dev
+```
+Navigate to `http://localhost:3000` in your browser.
+
+### Production Build
+```bash
+npm run build # or yarn build
+```
+Production files will be generated in the `dist` directory.
+
+### Code Quality
+```bash
+npm run lint # or yarn lint
+```
+
+## 📁 Project Architecture
+
+```
+src/
+├── components/        # Reusable React components
+├── hooks/            # Custom React hooks
+├── types/            # TypeScript type definitions
+├── utils/            # Utility functions and helpers
+├── App.tsx          # Main application component
+└── main.tsx         # Application entry point
+
+public/
+├── assets/          # Static assets
+└── index.html       # HTML template
+```
+
+## 🤝 Contributing
+
+We welcome contributions! Here's how you can help:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'feat: add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<div align="center">
+Made with ❤️ Ragib Hasan
+</div>
